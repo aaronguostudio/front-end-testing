@@ -12,7 +12,7 @@ it('renders without crashing', () => {
 
   // shallow 只会渲染 App 这个组件，不会渲染内部的实现
   const wrapper = shallow(<App />)
-  expect(wrapper).toMatchSnapshot()
+  // expect(wrapper).toMatchSnapshot()
 
   const container = expect(wrapper.find(`[data-test='container']`))
 
